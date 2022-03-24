@@ -51,7 +51,7 @@ h2 {
 }
 .container{
     display: grid;
-    grid-template-columns: repeat(4, 25%);
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .person-image {
@@ -74,6 +74,7 @@ h2 {
 }
 .container-person h1 {
     margin-top: .8rem;
+    font-size: 40px;
 }
 .logo-instagram {
     position: absolute;
@@ -83,4 +84,123 @@ h2 {
 .devicon-twitter-original{
     font-size: 50px;
     color: white;
+}
+
+@media only screen and (max-width: 1600px) {
+    .person-image {
+        width: 20rem;
+        font-size: 36px;
+    }
+    .logo-instagram {
+        padding: 8rem;
+    }
+    .container-person h1 {
+        font-size: 36px;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .person-image {
+        width: 17rem;
+    }
+    .logo-instagram {
+        padding: 6.5rem;
+    }
+    .container-person h1 {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .person-image {
+        width: 14rem;
+    }
+    .logo-instagram {
+        padding: 4rem;
+    }
+    .container-person h1 {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .nav-links {
+        display: flex;
+        gap: 30px;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .person-image {
+        width: 14rem;
+    }
+    .logo-instagram {
+        padding: 4rem;
+    }
+    .container-person h1 {
+        font-size: 28px;
+    }
+}
+@media only screen and (max-width: 750px) {
+    .nav-links {
+        gap: 15px;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .person-image {
+        width: 18rem;
+    }
+    .logo-instagram {
+        padding: 4rem;
+    }
+    .container-person h1 {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .nav-links {
+        gap: 15px;
+    }
+    .nav-links a{
+        font-size: 13px;
+        border: 1px solid rgb(0, 128, 0);
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .person-image {
+        width: 18rem;
+    }
+    .logo-instagram {
+        padding: 4rem;
+    }
+    .container-person h1 {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .person-image {
+        width: 24rem;
+    }
+    .logo-instagram {
+        padding: 4rem;
+    }
+    .container-person h1 {
+        font-size: 28px;
+    }
 }
