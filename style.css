@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Staatliches&display=swap');* {
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Staatliches&display=swap');
+* {
     margin: 0;
     padding: 0;
 }
 
 .header {
-    background-image: url(images/TRopaWallpaper.png);
+    background-image: url(images/TropaWallpaper.png);
     background-position: center top;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -39,6 +40,7 @@
     text-decoration: none;
     border: 1px solid rgba(0, 128, 0, 0);
     padding: 7px;
+    transition: all .2s ease;
 }
 .nav-links a:hover {
     background-color: #3d3d3d54;
@@ -54,6 +56,7 @@
     align-items: center;
     min-height: 40vh;
     font-family: 'Cabin', sans-serif;
+    max-width: 100% !important;
     
 }
 .news h1 {
@@ -65,20 +68,14 @@
     margin-top:20px ;
     font-size: 20px;
 }
-
-.images-galery {
-    margin: 50px 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 20px;
-    width: 100%;
+.galeria {
+    max-width: 100%;
     
-
 }
-.images-galery img{
-    width: 400px;
-    height: 400px;
+
+.galeria-slide .galeria-item {
+    padding: 20px;
+    width: 400px !important;
 }
 
 .footer {
